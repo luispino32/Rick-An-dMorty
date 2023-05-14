@@ -13,7 +13,7 @@ export default function Cards(props) {
                      origin={card.origin.name}
                      image={card.image}
                      key={card.id}
-                     onClose={() => window.alert('Emulamos que se cierra la card')}
+                     onClose={() => props.onClose(card.id)}
                />
             );
          })}
